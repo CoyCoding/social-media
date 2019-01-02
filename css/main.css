@@ -9,6 +9,10 @@ html{
 a{
   text-decoration: NONE;
 }
+
+.inline-block{
+  display: inline-block;
+}
 /*          -----Navbar---                    */
 
 header{
@@ -141,23 +145,27 @@ header .quick-options{
 
 #content-area .side-column{
   width: 25%;
-  background: red;
   margin: 0 2.5%;
   float: left;
 }
 
-.side-column .photos .body{
-  display: grid;
-  grid-gap: 5px;
-  background: purple;
-  grid-template-columns: repeat(3, minmax(100px, 300px));
+#content-area .intro{
+margin-top: 2.5vw;
 }
 
-.side-column .friends .body{
+.side-column .head{
+  margin:  5px 0 0 5px;
+}
+
+.side-column .widget-title{
+  display: inline-block;
+}
+
+.side-column .body{
   display: grid;
   grid-gap: 5px;
-  background: purple;
   grid-template-columns: repeat(3, minmax(100px, 300px));
+  margin: 5px;
 }
 
 .side-column .body .preview-photo{
@@ -168,6 +176,8 @@ header .quick-options{
 .preview-photo img{
   height: inherit;
   width: inherit;
+  border: 1px solid black;
+  box-shadow: 0 0 1px black;
 }
 
 #content-area .main-column{
@@ -183,9 +193,28 @@ header .quick-options{
 }
 
 #content-area .widget-box{
-  background: WHITE;
-  border-radius: 2px;
-  box-shadow: 0px 0px 10px grey;
-  margin-bottom: 20px;
-  overflow: hidden;
+  background: rgb(248, 248, 255);
+border-radius: 2px;
+box-shadow: 0px 3px 10px #e5e5e5;
+border: 1px solid #e7e7ee;
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+#content-area .widget-img{
+  background: #80808047;
+      box-shadow: -1px -1px 1px 1px #7a7474;
+      box-sizing: content-box;
+      margin: 5px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#content-area .widget-img i{
+  color: white;
+  text-shadow: 1px 1px black;
 }
