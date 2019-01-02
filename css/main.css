@@ -77,7 +77,7 @@ header .quick-options{
 }
 
 /* Navbar End */
-
+/* Content*/
 #profile-banner{
   padding: 200px 15px 90px 15px;
   background-image: linear-gradient(to top right, #00004c5c, #a1f0a133), url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/83/19/0557c8d910073a3.jpg);
@@ -126,7 +126,7 @@ header .quick-options{
   text-shadow: 0px 0px 1px white;
   transition: background ease-in .3s;
   border: 1px solid black;
-    box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
 }
 
 #profile-banner .profile-info .user-details a:hover{
@@ -134,6 +134,58 @@ header .quick-options{
   padding: 12px;
   margin-left: -2px;
   margin-right: 8px;
-
   box-shadow: 2px 4px 10px black;
+}
+
+/* end Content*/
+
+#content-area .side-column{
+  width: 25%;
+  background: red;
+  margin: 0 2.5%;
+  float: left;
+}
+
+.side-column .photos .body{
+  display: grid;
+  grid-gap: 5px;
+  background: purple;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+}
+
+.side-column .friends .body{
+  display: grid;
+  grid-gap: 5px;
+  background: purple;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+}
+
+.side-column .body .preview-photo{
+  height: 100%;
+  width: 100%;
+}
+
+.preview-photo img{
+  height: inherit;
+  width: inherit;
+}
+
+#content-area .main-column{
+  width: 65%;
+  float: left;
+  height: 600px;
+  margin: 0 2.5%;
+  background: blue;
+}
+
+#content-area{
+  background: #FAFAFA;
+}
+
+#content-area .widget-box{
+  background: WHITE;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px grey;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
