@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: NONE;
+}
+/*          -----Navbar---                    */
+
+header{
+  background: #4141a1;
+  padding: 10px 20px 10px 20px;
+
+}
+
+.nav-item, .nav-item ul li,
+.nav-item .quick-options, .nav-item a{
+  color: white;
+  display: inline-block;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+header .logo-area{
+  width: 20%;
+  margin-left: -4px;
+  font-size: 26px;
+  justify-content: center;
+}
+
+header .menu-links{
+  margin-left: -4px;
+  width: 20%;
+  border-right: 1px white solid;
+  text-align: right;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+header .menu-links a{
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+header .icon-links{
+ width: 20%;
+ margin-left: -4px;
+ padding-left: 20px;
+
+}
+
+header .icon-links .privacy{
+  padding-left: 20px;
+  color: red;
+}
+
+header .icon-links a{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header .search-area{
+  width: 40%;
+  margin-left: -4px;
+  text-align: right;
+}
+
+header .quick-options{
+  padding-right: 20px;
+  border-right: 1px white solid;
+}
+
+/* Navbar End */
+
+#profile-banner{
+  padding: 200px 15px 90px 15px;
+  background-image: linear-gradient(to top right, #00004c5c, #a1f0a133), url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/83/19/0557c8d910073a3.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: inherit;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+#profile-banner .profile-info .user-img{
+    padding: 10px;
+    display: inline-block;
+}
+
+#profile-banner .profile-info .user-img img{
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 1px;
+  box-shadow: 0px 0px 10px black;
+}
+
+#profile-banner .profile-info .user-details{
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+}
+
+#profile-banner .profile-info .user-details h3{
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: 0px 0px 1px white;
+  margin-bottom: 20px;
+}
+
+#profile-banner .profile-info .user-details a{
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  background: rgba(155, 155, 155, 0.8);
+  font-weight: 100;
+  text-shadow: 0px 0px 1px white;
+  transition: background ease-in .3s;
+  border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+
+#profile-banner .profile-info .user-details a:hover{
+  background: rgba(155, 150, 250, 0.7);
+  padding: 12px;
+  margin-left: -2px;
+  margin-right: 8px;
+
+  box-shadow: 2px 4px 10px black;
+}
