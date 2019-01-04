@@ -4,6 +4,7 @@
 
 html{
   font-family: sans-serif;
+  background: #f1f1f1;
 }
 
 a{
@@ -193,12 +194,12 @@ margin-top: 2.5vw;
 }
 
 #content-area .widget-box{
-  background: rgb(248, 248, 255);
-border-radius: 2px;
-box-shadow: 0px 3px 10px #e5e5e5;
-border: 1px solid #e7e7ee;
-margin-bottom: 30px;
-overflow: hidden;
+  background: rgb(163, 163, 218);
+  border-radius: 5px;
+  box-shadow: 0px 9px 19px 0px #dbd4d4;
+  border: 1px solid #c7c7ff;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 #content-area .widget-img{
