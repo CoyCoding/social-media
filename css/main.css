@@ -194,7 +194,7 @@ margin-top: 30px;
 }
 
 #content-area .widget-box{
-  background: rgb(105, 105, 160);
+  background: rgb(219, 219, 236);
   border-radius: 2px;
   box-shadow: 0px 9px 18px 0px #0000007d;
   border: 1px solid #423b3b;
@@ -244,6 +244,14 @@ bottom: 7.5%;
   background: #4141a1;
   border-radius: 1px;
   transition: .2s ease-in-out;
+}
+
+.main-column .menu ul li:nth-child(2){
+  border-radius: 5px 0px 0px 5px;
+}
+
+.main-column .menu ul li:nth-child(6){
+  border-radius: 0px 5px 5px 0px;
 }
 
 .main-column .menu ul li:nth-child(2):hover{
