@@ -24,7 +24,7 @@ header{
 
 .nav-item, .nav-item ul li,
 .nav-item .quick-options, .nav-item a{
-  color: navajowhite;
+  color: whitesmoke;
   display: inline-block;
   font-family: sans-serif;
   text-decoration: none;
@@ -93,7 +93,8 @@ header .quick-options{
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #profile-banner .profile-info .user-img{
@@ -160,6 +161,8 @@ margin-top: 30px;
 
 .side-column .widget-title{
   display: inline-block;
+  color: #141414;
+  font-weight: 700;
 }
 
 .side-column .body{
@@ -263,7 +266,7 @@ bottom: 7.5%;
 }
 
 .main-column .menu ul li:hover{
-  box-shadow: inset -5px 0px 8px 0px #00000091, inset 4px 0px 8px 0px #000000a6;
+  box-shadow: inset -3px -1px 6px 0px #00000091, inset 3px -1px 9px 0px #000000a6;
   cursor: pointer;
 }
 
@@ -284,6 +287,12 @@ bottom: 7.5%;
   font-size: 20px;
 }
 
-.menu-btn .text{
+.main-column .widget-title {
+    display: inline-block;
+    color: #141414;
+    font-weight: 700;
+}
 
+.main-column .head {
+    margin: 5px 0 0 5px;
 }
