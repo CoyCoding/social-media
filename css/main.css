@@ -4,7 +4,7 @@
 
 html{
   font-family: sans-serif;
-  background: #f1f1f1;
+  background: #403773;
 }
 
 a{
@@ -93,6 +93,7 @@ header .quick-options{
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  border-bottom: 1px solid black;
 }
 
 #profile-banner .profile-info .user-img{
@@ -134,7 +135,7 @@ header .quick-options{
 }
 
 #profile-banner .profile-info .user-details a:hover{
-  background: rgba(155, 150, 250, 0.7);
+  background: rgba(65, 65, 161, 0.7);
   padding: 12px;
   margin-left: -2px;
   margin-right: 8px;
@@ -231,24 +232,32 @@ bottom: 7.5%;
 
 .main-column .menu ul{
   display: grid;
-  grid-template-columns: repeat(7, auto);
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
   align-items: center;
-  grid-gap: 3px;
-
 }
 
 .main-column .menu ul .menu-btn{
   padding: 20px 0 20px 0;
   text-align: center;
-
+  box-shadow: inset 0px -8px 1px 0px black;
   color: navajowhite;
   background: #4141a1;
-  border-radius: 5px;
+  border-radius: 1px;
   transition: .2s ease-in-out;
+  border: 1px solid black;
+}
+
+.main-column .menu ul li:nth-child(2):hover{
+  box-shadow: inset -4px -1px 7px 0px #000000b8;
+}
+
+.main-column .menu ul li:nth-child(6):hover{
+  box-shadow: inset 4px -1px 10px 0px #000000b8;
 }
 
 .main-column .menu ul li:hover{
-  box-shadow: inset 0px -17px 1px 0px #000000b8;
+
+  border-left: 6px black solid;
 }
 
 .square{
@@ -262,4 +271,8 @@ bottom: 7.5%;
 .menu-btn i{
   padding-bottom: 10px;
   font-size: 20px;
+}
+
+.menu-btn .text{
+
 }
