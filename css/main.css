@@ -244,7 +244,6 @@ bottom: 7.5%;
   background: #4141a1;
   border-radius: 1px;
   transition: .2s ease-in-out;
-  border: 1px solid black;
 }
 
 .main-column .menu ul li:nth-child(2):hover{
