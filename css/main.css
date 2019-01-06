@@ -5,6 +5,7 @@
 html{
   font-family: sans-serif;
   background: #403773;
+  height: 100%;
 }
 
 a{
@@ -420,13 +421,32 @@ bottom: 7.5%;
   color: grey;
 }
 
-#comment-section .comment-form{
+#comment-section .comment-box{
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #b0b0d8;
   margin-bottom: 10px;
 }
 
-#comment-section .comment{
-          margin-left: 50px;
+#comment-section .comment-form{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#comment-section .comment-wrapper{
+   margin-left: 10px;
+}
+
+#comment-section .comment-box-img{
+  margin: 0px 10px 0px 0px;
+}
+
+#comment-section .side-bar{
+  display: inline-flex;
+  flex-direction: column;
+  float: left;
+  justify-content: space-between;
+  align-items: center;
 }
