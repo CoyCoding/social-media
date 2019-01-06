@@ -382,7 +382,7 @@ bottom: 7.5%;
   margin-right: 5px;
 }
 
-#comment-section .post-icons .icon{
+#comment-section  .icon{
   background: #4141a1;
   color: transparent;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.31);
@@ -449,4 +449,10 @@ bottom: 7.5%;
   float: left;
   justify-content: space-between;
   align-items: center;
+}
+
+.comment-icon-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
