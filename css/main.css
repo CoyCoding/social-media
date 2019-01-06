@@ -372,14 +372,17 @@ bottom: 7.5%;
 #comment-section .inner-comment .post-icons{
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 #comment-section .inner-comment .post-icons i:nth-child(3){
   margin-left: auto;
+  margin-right: 2px;
 }
 
 #comment-section .inner-comment .post-icons i:nth-child(1){
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 #comment-section  .icon{
@@ -393,8 +396,10 @@ bottom: 7.5%;
 
 #comment-section .post-icons i{
   font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 5px;
+}
+
+#comment-section .post-icons p{
+  font-size: 14px;
 }
 
 #comment-section .post-icons .icon p{
@@ -436,7 +441,7 @@ bottom: 7.5%;
 }
 
 #comment-section .comment-wrapper{
-   margin-left: 10px;
+   margin-left: 15px;
 }
 
 #comment-section .comment-box-img{
