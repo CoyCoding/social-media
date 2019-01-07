@@ -438,6 +438,7 @@ bottom: 7.5%;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #comment-section .comment-wrapper{
@@ -460,4 +461,41 @@ bottom: 7.5%;
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+.comment-form .comment-icons{
+    display: flex;
+    margin: 0 0 0 10px;
+    align-items: center;
+}
+
+.comment-form .comment-icon{
+  padding: 0 0 0 10px;
+}
+
+.comment-form .comment-post{
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment-form .comment-post:focus{
+  outline: none;
+}
+
+.focus-border{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+
+.comment-post:focus + .focus-border
+{
+  width: 100%;
+  transition: 0.4s;
 }
