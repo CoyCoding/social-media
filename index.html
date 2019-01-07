@@ -10,10 +10,11 @@
   <link href="css/reset.css" rel="stylesheet" />
   <link href="css/main.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+  <script type="text/javascript" src="node_modules/autosize/dist/autosize.js"></script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jQuery.min.js"></script>
 </head>
 
-<body>
+<body onload="init()">
   <header>
     <div class="logo-area nav-item">
       <a href="#">Logo</a>
@@ -229,7 +230,6 @@
                     <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rogie/128.jpg" />
                   </div>
                   <div class="comment-icon-wrapper">
-
                     <i class="fas fa-reply icon"></i>
                     <i class="fas fa-thumbs-up icon"></i>
                   </div>
@@ -251,8 +251,8 @@
                   <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rogie/128.jpg" />
 
                 </div>
-                <div>
-                  <input class="comment-post" type="text" />
+                <div onload="" class="input-wrapper">
+                  <textarea rows="1" id="ta" class="comment-post" type="text"></textarea>
                   <span class="focus-border"></span>
                 </div>
                 <div class="comment-icons">
@@ -297,5 +297,40 @@
     </div>
   </section>
 </body>
+<script>
+  var observe;
+  if (window.attachEvent) {
+    observe = function(element, event, handler) {
+      element.attachEvent('on' + event, handler);
+    };
+  } else {
+    observe = function(element, event, handler) {
+      element.addEventListener(event, handler, false);
+    };
+  }
+
+  function init() {
+    var text = document.getElementById('ta');
+
+    function resize() {
+      text.style.height = 'auto';
+      text.style.height = text.scrollHeight + 'px';
+    }
+    /* 0-timeout to get the already changed text */
+    function delayedResize() {
+      window.setTimeout(resize, 0);
+    }
+    observe(text, 'change', resize);
+    observe(text, 'cut', delayedResize);
+    observe(text, 'paste', delayedResize);
+    observe(text, 'drop', delayedResize);
+    observe(text, 'keydown', delayedResize);
+
+    text.focus();
+    text.select();
+    resize();
+  }
+</script>
+
 
 </html>
