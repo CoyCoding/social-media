@@ -519,3 +519,13 @@ bottom: 7.5%;
   rows: 5;
   overflow: hidden;
 }
+
+.ad-column{
+  width: 20%;
+  margin: 0 5%;
+  float: left;
+}
+
+.inner-timeline{
+  margin-bottom: 30px;
+}
