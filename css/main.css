@@ -524,6 +524,9 @@ bottom: 7.5%;
   width: 20%;
   margin: 0 5%;
   float: left;
+  position: sticky;
+  top: 0;
+  margin-top: 30px;
 }
 
 .inner-timeline{

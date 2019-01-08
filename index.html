@@ -358,8 +358,8 @@
 
 
 
-    <div class="ad-column">
-      <div class="widget-box" style="margin-top: 30px;">
+    <div class="ad-column desktop">
+      <div class="widget-box" style="margin-top: 0px;">
         <div class="body" style="height: 600px">
 
         </div>
@@ -399,6 +399,17 @@
 
     resize();
   }
+
+  $(window).scroll(function() {
+    var scrollPos = $(document).scrollTop();
+    if (scrollPos > 500) {
+      $('.desktop').css('margin-top', () => {
+        return parseInt(30 + scrollPos - 500);
+      });
+    } else {
+      $('.desktop').css('margin-top', 30);
+    }
+  });
 </script>
 
 
