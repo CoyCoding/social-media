@@ -82,6 +82,7 @@ header .quick-options{
 }
 
 /* Navbar End */
+
 /* Content*/
 #profile-banner{
   padding: 200px 15px 90px 15px;
@@ -149,8 +150,8 @@ header .quick-options{
 
 #content-area .side-column{
   width: 20%;
-  margin: 0 5%;
-  float: left;
+ margin: 0 5%;
+ float: left;
 }
 
 #content-area .intro{
@@ -170,7 +171,7 @@ margin-top: 30px;
 .side-column .body{
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(3, minmax(100px, 300px));
+  grid-template-columns: repeat(3, minmax(auto, 300px));
   margin: 5px;
 }
 
@@ -187,14 +188,11 @@ margin-top: 30px;
 }
 
 #content-area .main-column{
+  height: auto;
   width: 40%;
-  float: left;
-  height: 600px;
-  margin: 0 0 0 0;
-}
+float: left;
+margin: 0 0 0 0;
 
-#content-area{
-  background: #FAFAFA;
 }
 
 #content-area .widget-box{
@@ -230,7 +228,7 @@ margin-top: 30px;
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
-bottom: 7.5%;
+  bottom: 50px;
 
 }
 
@@ -520,15 +518,42 @@ bottom: 7.5%;
   overflow: hidden;
 }
 
-.ad-column{
-  width: 20%;
+#content-area  .ad-column{
   margin: 0 5%;
-  float: left;
   position: sticky;
-  top: 0;
   margin-top: 30px;
+  height: calc(100vh - 60px);
+  width: 20%;
+  float: left;
 }
 
 .inner-timeline{
   margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  #content-area .main-column{
+    width: 60%;
+  }
+  #content-area .side-column{
+    width: 30%;
+  }
+  #content-area .ad-column{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1660px) {
+  .menu-btn .text div{
+    font-size: 14px;
+  }
+}
+
+#content-area{
+  background: #FAFAFA;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 5%;
+  margin: 0 5% 0 5%;
+  grid-template-columns: minmax(300px, 1fr) 3fr minmax(300px, 1fr);
 }
